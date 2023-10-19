@@ -2,7 +2,7 @@
 const headerContainer = document.getElementById("header-container");
 
 // Buat permintaan HTTP menggunakan fetch API
-fetch("/header.html")
+fetch("header.html")
   .then((response) => {
     if (response.ok) {
       return response.text();
@@ -21,7 +21,7 @@ fetch("/header.html")
 const footerContainer = document.getElementById("footer-container");
 
 // Buat permintaan HTTP menggunakan fetch API
-fetch("/footer.html")
+fetch("footer.html")
   .then((response) => {
     if (response.ok) {
       return response.text();
