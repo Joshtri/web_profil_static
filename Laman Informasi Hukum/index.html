@@ -27,6 +27,8 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <!-- <link href="assets/css/styleCostum.css" rel="stylesheet"> -->
@@ -48,6 +50,9 @@
   height: auto;
 }
   </style>
+
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
   <!-- ======= Header ======= -->
@@ -89,7 +94,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Konfirmasi Log Out</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="fa-regular fa-square-check me-1"></i>Konfirmasi Log Out</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -140,7 +145,6 @@
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">Topik Utama</h2>
               <p class="animate__animated animate__fadeInUp">Pada laman informasi ini kami menyediakan beberapa beberapa topik yang dibahas dan hal yang tidak dipatuhi oleh masyarakat sekitar dan sanksi seperti apa yang diberikan berdasarkan UU  . </p>
-              <a href="../index.html" class="fs-1 fw-bold text-danger">Coba aja dlu</a>
               <a href="#topik" class="btn-get-started animate__animated animate__fadeInUp scrollto">Masuk Topik Utama</a>
             </div>
           </div>
@@ -390,6 +394,26 @@
 
   </main><!-- End #main -->
 
+  <!-- Modal untuk Test -->
+  <div class="modal fade" id="greetingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <!-- Isi modal sesuai kebutuhan Anda -->
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Selamat Datang Sobat</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Selamat datang di Laman Portal Informasi Hukum yang berisikan pengetahuan tentang ilmu hukum yang dapat mengedukasi pengunjung
+        </div>
+        <div class="modal-footer">
+          <!-- <a type="button" href="../index.html" class="btn btn-primary">Iya</a> -->
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
@@ -414,6 +438,13 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+    <!-- JavaScript to show the modal automatically -->
+  <script>
+    $(document).ready(function() {
+      $('#greetingModal').modal('show');
+    });
+  </script>
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -423,6 +454,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
+
 
 </body>
 
