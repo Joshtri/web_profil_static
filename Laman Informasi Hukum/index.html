@@ -46,13 +46,15 @@
 
   <style>
     .img-responsive {
-  max-width: 100%;
-  height: auto;
-}
+      max-width: 100%;
+      height: auto;
+      }
+
   </style>
 
   <!-- Include jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
 
   <!-- ======= Header ======= -->
@@ -177,8 +179,8 @@
                 <div class="icon-box">
                   <div class="icon"><i class="bi bi-laptop"></i></div>
                   <h4 class="title"><a href="">Apa itu Hukum ?</a></h4>
-                  <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                  <button class="btn btn-primary btn-sm">Detail</button>
+                  <p class="description" style="text-align: justify;">Hukum adalah perangkat peraturan yang dibuat oleh penguasa berwenang yang bersifat tertulis atau tidak tertulis dan bersifat memaksa/mengatur </p>
+                  <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#modalQ1">Detail</button>
                 </div>
               </div>
             </div>
@@ -188,9 +190,10 @@
                 <div class="icon-box">
                   <div class="icon"><i class="bi bi-briefcase"></i></div>
                   <h4 class="title"><a href="">Apa Hak dan Kewajiban Warga ?</a></h4>
-                  <p class="descriptio-n">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                  <p class="description">Lihat lebih detail<i class=" ms-2 fa-solid fa-arrow-down-long fa-beat"></i><i class=" ms-2 fa-solid fa-arrow-down-long fa-beat"></i><i class=" ms-2 fa-solid fa-arrow-down-long fa-beat"></i> <br><br><br>
+                  <br></p>
 
-                  <button class="btn btn-primary btn-sm">Detail</button>
+                  <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#modalQ2">Detail</button>
                 </div>
               </div>
             </div>
@@ -200,15 +203,108 @@
                 <div class="icon-box">
                   <div class="icon"><i class="bi bi-calendar4-week"></i></div>
                   <h4 class="title"><a href="">Dunia dapat Berjalan Tanpa Aturan ?</a></h4>
-                  <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur trade stravi</p>
+                  <p class="description" style="text-align: justify;">Dunia dapat berjalan tanpa aturan. Namun jika Tanpa aturan, dunia akan kacau dan masyarakat dapat melakukan apapun yang mereka inginkan</p>
 
-                  <button class="btn btn-primary btn-sm">Detail</button>
+                  <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#modalQ3">Detail</button>
                 </div>
               </div>
             </div>
         </div>
       </div>
+
+      <!-- * Modal Q1 -->
+      <div class="modal fade" id="modalQ1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Apa Itu Hukum-Penjelasan Detail</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Selain itu,terdapat sanksi bagi pelanggarnya. Hukum ditujukan pada aspek perilaku manusia dan bertujuan untuk menciptakan keamanan, ketertiban dan keadilan.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+              <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- * Modal Q2 -->
+      <div class="modal fade" id="modalQ2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Apa Hak & Kewajiban Warga ?</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Definisi-Hak
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Hak</strong>, Hak warga negara yang dijamin dalam UUD meliputi hak asasi manusia seperti <code>kebebasan beragama, berserikat, berkumpul, 			pengakuan, perlindungan, dan kepastian hukum yang adil, hak bekerja 		dan perlakuan yang adil, serta hak atas status kewarganegaraan.</code>.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Definisi-Kewajiban
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Kewajiban</strong>, yaitu
+                      Wajib menaati hukum dan pemerintah (Pasal 27 ayat 1) Wajib ikut serta 	dalam upaya pembelaan negara (Pasal 27 ayat 3) Wajib menghormati 	Hak Asasi Manusia Orang Lain (Pasal 28J ayat 1)
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+              <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- * Modal Q3 -->
+      <div class="modal fade" id="modalQ3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Apakah Dunia Dapat Berjalan Tanpa Aturan</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Dalam keadaan tanpa aturan, perbedaan pandangan dan kepentingan individu dapat menyebabkan konflik yang serius. Pertentangan dan perselisihan akan sulit diselesaikan tanpa kerangka hukum yang mengatur penyelesaian sengketa. 
+              
+              <p class="mt-2">
+                Oleh karena itu, aturan dan hukum penting dalam memastikan ketertiban dan keadilan dalam masyarakat.
+              </p>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+              <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section><!-- End Featured Services Section -->
+
+
 
     <!-- ======= About Us Section ======= -->
     <section id="berita" class="about">
@@ -216,10 +312,16 @@
 
         <div class="section-title">
           <h2>Berita Terkini</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <div class="container">
+            <div id="berita-container" class="row">
+                <!-- Berita akan ditampilkan di sini -->
+            </div>
+          </div>
         </div>
       </div>
     </section><!-- End About Us Section -->
+
+
 
 
 
@@ -271,11 +373,11 @@
               <img src="assets/img/gargabe.png" class="img-fluid img-thumbnail card-img" alt="">
               <div class="portfolio-info">
                 <h4 class="text-center">Membuang Sampah sembarangan</h4>
-                <p style="text-align: justify;">Pelanggaran ini sering terjadi di kehidupan sehari-hari dan orang menganggap remeh akan kewajiban ini. Sehingga penulis mengangkat topik ini pada Poral informasi hukum</p>
+                <p style="text-align: justify;">Pelanggaran ini sering terjadi di kehidupan sehari-hari dan orang menganggap remeh akan kewajiban ini. Sehingga penulis mengangkat topik ini pada Portal informasi hukum</p>
                 <div class="portfolio-links">
                   <!-- <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a> -->
                   <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
-                  <a class="btn btn-primary btn-sm" href="portfolio-details.html">Baca Lanjut</a>
+                  <a class="btn btn-primary btn-sm" href="topik1_Sampah.html">Baca Lanjut</a>
                 </div>
               </div>
             </div>
@@ -352,7 +454,17 @@
       </div>
     </section><!-- End Team Section -->
 
-    <!-- ======= Contact Section ======= -->
+    <section class="cta">
+        <div class="mt-3">
+          <h3 class="text-center mb-3">MUSIC SESSION</h3>
+          <p class="text-center">Kami menyediakan kolom music session untuk memutar lagu</p>
+          <div class=" col-md-7 mx-auto">      
+            <iframe width="100%" height="450" scrolling="no" frameborder="yes" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1199448724&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/josh-music-965630236" title="Mixtrack" target="_blank" style="color: #cccccc; text-decoration: none;">Mixtrack</a> · <a href="https://soundcloud.com/josh-music-965630236/sets/cozy-track" title="Cozy Track" target="_blank" style="color: #cccccc; text-decoration: none;">Cozy Track</a></div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
 
@@ -454,10 +566,51 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <!-- <script src="assets/js/rssNews.js"></script> -->
 
+    <script>
+        // Fungsi untuk mengambil dan menampilkan konten RSS
+        function tampilkanBerita() {
+            fetch('https://api.allorigins.win/get?url=' + encodeURIComponent('https://www.antaranews.com/rss/hukum.xml'))
+                .then(response => response.json())
+                .then(data => {
+                    const parser = new DOMParser();
+                    const xmlDoc = parser.parseFromString(data.contents, 'text/xml');
+                    const items = xmlDoc.querySelectorAll('item');
 
+                    items.forEach(item => {
+                        const title = item.querySelector('title').textContent;
+                        const link = item.querySelector('link').textContent;
+                        const description = item.querySelector('description').textContent;
 
+                        // Ambil gambar/thumbnail dari konten berita jika tersedia
+                        const thumbnail = item.querySelector('enclosure');
+                        const thumbnailUrl = thumbnail ? thumbnail.getAttribute('url') : 'placeholder.jpg';
 
+                        const beritaHtml = `
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="${thumbnailUrl}" class="card-img-top" alt="Thumbnail">
+                                    <div class="card-body">
+                                        <h5 class="card-title">${title}</h5>
+                                    
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="${link}" class="card-link" target="_blank">Baca lebih lanjut</a>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        
+                        document.getElementById('berita-container').innerHTML += beritaHtml;
+                    });
+                })
+                .catch(error => console.error(error));
+        }
+
+        // Memanggil fungsi untuk menampilkan berita saat halaman dimuat
+        tampilkanBerita();
+    </script>
 </body>
 
 </html>
